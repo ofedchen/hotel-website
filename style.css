@@ -21,6 +21,11 @@ header {
     row-gap: 20%;
 }
 
+.header-small {
+    height: 20%;
+    background-position: top;
+}
+
 .top-header {
     display: flex;
     align-items: center;
@@ -30,11 +35,16 @@ header {
     height: 20lvh;
 }
 
-
 .logo {
-    width: 20%;
+    width: 100%;
     max-width: 350px;
     margin: 5px 5px 5px 25px;
+}
+
+.logo_div {
+    width: 20%;
+    height: auto;
+    max-width: 350px;
 }
 
 nav {
@@ -49,6 +59,12 @@ li {
     list-style: none;
     cursor: pointer;
     color:#DCD7C9;
+}
+
+a {
+    color:#DCD7C9;
+    text-decoration: none;
+    font-size: calc(14px + 0.390625vw);
 }
 
 nav>li {
@@ -130,9 +146,12 @@ span {
     font-weight: 700;
 }
 
-main>p {
+p {
     color: #2C3639;
     font-size: calc(12px + 0.390625vw);
+}
+
+main>p {
     font-weight: 300;
     line-height: 150%;
     padding: 3% 10%;
@@ -160,10 +179,7 @@ button>a:hover {
 }
 
 button>a {
-    color: white;
-    font-family: 'Cabin', sans-serif;
     font-size: calc(10px + 0.390625vw);
-    text-decoration: none;
 }
 
 footer {
@@ -232,4 +248,23 @@ svg {
     fill: white;
     width: 32px;
     height: 32px;
+}
+
+.about {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: max-content;
+    gap: 30px;
+    padding-block: 20px;
+    justify-items: left;
+    text-align: left;
+}
+
+.about>p {
+    grid-column: span 2;
+}
+
+.about p:nth-child(4), p:nth-child(5) {
+    grid-column: span 3;
 }
