@@ -14,7 +14,11 @@
 <body>
     <header>
         <div class="top-header">
-            <img class="logo" src="/logo/bonz.ai-logo-white-landscape.png" alt="logo">
+            <div class="logo_div">
+                <a href="index.html"><img class="logo" src="/logo/bonz.ai-logo-white-landscape.png" alt="logo"
+                        width="100%">
+                </a>
+            </div>
             <nav>
                 <li><a href="about.html">Hotel</a></li>
                 <li>Rooms</li>
@@ -22,18 +26,18 @@
                 <li>Contact</li>
             </nav>
         </div>
-        <form action="book">
+        <form method="POST" target="_blank">
             <label for="arrival-date">Arrival</label>
             <input type="date" id="arrival-date">
             <label for="departure-date">Departure</label>
             <input type="date" id="departure-date">
             <label for="people">Number of people</label>
             <input type="number" id="people">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" onclick="myFunction()"/>
         </form>
     </header>
     <main>
-        <h1><span>Smart Stays, Seamless Moments:</span><br>
+        <h1><span class="homepage-span">Smart Stays, Seamless Moments:</span><br>
             Hotel Bonz.ai, Your Gateway to Intelligent Hospitality</h1>
         <p>Welcome to a new era of hospitality where cutting-edge technology blends seamlessly with unparalleled
             comfort. At Hotel Bonz.ai, we redefine your travel experience, offering not just a stay, but a journey into
@@ -47,7 +51,7 @@
             <h2 class="footer-h2">Social Media</h2>
             <address>
                 <p>Lillevollveien 10
-                8310 Leknes</p>
+                    8310 Leknes</p>
                 <p><a href="tel:+47 70 05 40 30">+47 70 05 40 30</a></p>
                 <p><a href="mailto:info.lofoten@bonz.ai">Email: info.lofoten@bonz.ai</a></p>
             </address>
@@ -68,6 +72,15 @@
             </div>
         </div>
     </footer>
+
+<script>
+    function myFunction() {
+        window.location.href="search_results.html";
+        console.log("submitted");
+    }
+
+</script>
+
 </body>
 
 </html>
