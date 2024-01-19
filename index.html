@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="nav.js" defer></script>
 </head>
 
 <body>
@@ -19,11 +20,38 @@
                         width="100%">
                 </a>
             </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+    
             <nav>
-                <li><a href="about.html">Hotel</a></li>
-                <li>Rooms</li>
-                <li>Offers and Packages</li>
-                <li>Contact</li>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="active">
+                        <a href="">
+                            <span aria-hidden="true">00</span>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <span aria-hidden="true">01</span>Hotel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span aria-hidden="true">02</span>Rooms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span aria-hidden="true">03</span>Offers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span aria-hidden="true">04</span>Contact
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
         <form method="POST" target="_blank">
@@ -72,6 +100,10 @@
             </div>
         </div>
     </footer>
+    <div class="links">
+        <a target="_blank" href="https://icons8.com/icon/36389/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a target="_blank" href="https://icons8.com/icon/3QmmTwcR4c2b/close-button">Close Button</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
 
 <script>
     function myFunction() {
